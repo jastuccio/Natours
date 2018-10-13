@@ -8,7 +8,7 @@
     border-radius: 10rem;
     transition: all 0.2s; /* aplies to transforms on the pseudoclasses  */
     position: relative; /* Set to relative so that button::after takes its absolute positioning based on this element */
-    font-size: 1.6rem;
+    font-size: $default-font-size;
   }
 
   &:hover {
@@ -52,5 +52,30 @@
   &--animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards; /* styles applied before animation starts.  This makes the button invisible at the start */
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none; // remove the underlining so we can add our own underline and control its spacing
+    border-bottom: 0.1rem solid $color-primary;
+    padding: 0.3rem;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    transform: translateY(0);
   }
 }
