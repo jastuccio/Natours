@@ -1,12 +1,15 @@
+// height must be the same for .card and &__side
+$card-height: 52rem;
+
 .card {
-  // functionality
+  // FUNCTIONALITY
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 502rem;
+  height: $card-height;
 
   &__side {
-    height: 52rem;
+    height: $card-height;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
