@@ -28,3 +28,10 @@ $gutter-horizontal: 6rem;
 $box-shadow-small: 0 0.5rem 1rem rgba($color-black, 0.15);
 $box-shadow-medium: 0 1rem 2rem rgba($color-black, 0.2);
 $box-shadow-large: 0 2rem 4rem rgba($color-black, 0.3);
+
+// BORDER RADIUS
+$border-radius-small: 0.3rem;
+$border-radius-half-circle: 10rem;
+
+// SECTIONS
+$card-height: 52rem; // height must be the same for .card and &__side

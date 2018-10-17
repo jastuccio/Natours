@@ -5,7 +5,7 @@
     text-decoration: none;
     padding: 1.5rem 4rem;
     display: inline-block; /* inline-block elements are treated as if they are text. Setting the parent element to text-align: center will center this item */
-    border-radius: 10rem;
+    border-radius: $border-radius-half-circle;
     transition: all 0.2s; /* aplies to transforms on the pseudoclasses  */
     position: relative; /* Set to relative so that button::after takes its absolute positioning based on this element */
     font-size: $default-font-size;
@@ -51,7 +51,7 @@
     display: inline-block; /* the button is also an inline-block */
     height: 100%;
     width: 100%; /* same height and radius as the button */
-    border-radius: 10rem;
+    border-radius: $border-radius-half-circle;
     position: absolute;
     top: 0;
     left: 0;

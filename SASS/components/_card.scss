@@ -1,23 +1,19 @@
-$card-height: 52rem; // height must be the same for .card and &__side
-
-$card-border-radius: 0.3rem;
-
 .card {
   // FUNCTIONALITY
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: $card-height;
+  height: $card-height; // height must be the same for .card and &__side
 
   &__side {
-    height: $card-height;
+    height: $card-height; // height must be the same for .card and &__side
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: $card-border-radius;
+    border-radius: $border-radius-small;
     overflow: hidden;
     box-shadow: $box-shadow-large;
 
@@ -69,8 +65,8 @@ $card-border-radius: 0.3rem;
     height: 23rem;
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: $card-border-radius;
-    border-top-right-radius: $card-border-radius;
+    border-top-left-radius: $border-radius-small;
+    border-top-right-radius: $border-radius-small;
 
     &--1 {
       background-image: linear-gradient(
