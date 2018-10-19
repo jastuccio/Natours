@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -9,6 +10,10 @@
     transition: all 0.2s; /* aplies to transforms on the pseudoclasses  */
     position: relative; /* Set to relative so that button::after takes its absolute positioning based on this element */
     font-size: $default-font-size;
+
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -21,7 +26,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: $box-shadow-small;
   }
