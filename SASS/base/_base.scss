@@ -8,7 +8,21 @@
 
 html {
   // this defines what 1rem equals
+  // 1 rem = 10px; 10px/16px = 62.5%
   font-size: 62.5%;
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12, 12/16 = .75
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px, 9/16 = .5626
+  }
+
+  // this query also covers the phone
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px, 8/16 = .5
+  }
 }
 
 body {
