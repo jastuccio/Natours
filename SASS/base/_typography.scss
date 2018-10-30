@@ -12,7 +12,7 @@ body {
   text-transform: uppercase;
   /* backface-visibility: hidden; prevents "shaking" from the "moveIn *" animations */
   backface-visibility: hidden;
-  margin: 6rem;
+  margin-bottom: 6rem;
 
   &--main {
     display: block;
