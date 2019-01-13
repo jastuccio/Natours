@@ -3,7 +3,7 @@
   // center a block element inside another block element
   margin: 0 auto;
 
-  // We do not need a margin on the bottom row. This rule compliles to: .row:not(:last-child { ... }
+  // We do not need a margin on the bottom row. This rule compiles to: .row:not(:last-child { ... }
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
 
